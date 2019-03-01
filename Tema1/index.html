@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Pagina principala</title>
+	</head>
+	<body>
+
+		  Alege o tara:<br>
+		  <input id ="country" type="text" value="France"><br>
+		  <input type="submit" onclick = "reply_click()" value="Submit">
+	</body>
+
+	<script type="text/javascript">
+		var reply_click = function()
+		{
+			country = document.getElementById('country').value
+			str = "http://localhost:8000/endpoint1/"
+			res = str + country
+			alert(res)
+	   	    window.location.href = res;
+		}
+	</script>
+</html>

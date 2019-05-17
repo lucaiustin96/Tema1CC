@@ -1,0 +1,44 @@
+[02-May-2019 14:10:08 America/Los_Angeles] PHP Notice:  Undefined index: search-text in D:\home\site\wwwroot\bing-search-image.php on line 16
+[02-May-2019 14:10:08 America/Los_Angeles] PHP Warning:  require_once(HTTP/Request2.php): failed to open stream: No such file or directory in D:\home\site\wwwroot\face-recognition.php on line 15
+[02-May-2019 14:10:08 America/Los_Angeles] PHP Fatal error:  require_once(): Failed opening required 'HTTP/Request2.php' (include_path='.;C:\php\pear') in D:\home\site\wwwroot\face-recognition.php on line 15
+[02-May-2019 14:10:50 America/Los_Angeles] PHP Notice:  Undefined index: search-text in D:\home\site\wwwroot\bing-search-image.php on line 16
+[02-May-2019 14:10:50 America/Los_Angeles] PHP Warning:  require_once(HTTP/Request2.php): failed to open stream: No such file or directory in D:\home\site\wwwroot\face-recognition.php on line 15
+[02-May-2019 14:10:50 America/Los_Angeles] PHP Fatal error:  require_once(): Failed opening required 'HTTP/Request2.php' (include_path='.;C:\php\pear') in D:\home\site\wwwroot\face-recognition.php on line 15
+[02-May-2019 14:10:53 America/Los_Angeles] PHP Warning:  require_once(HTTP/Request2.php): failed to open stream: No such file or directory in D:\home\site\wwwroot\face-recognition.php on line 15
+[02-May-2019 14:10:53 America/Los_Angeles] PHP Fatal error:  require_once(): Failed opening required 'HTTP/Request2.php' (include_path='.;C:\php\pear') in D:\home\site\wwwroot\face-recognition.php on line 15
+[02-May-2019 14:10:54 America/Los_Angeles] PHP Warning:  require_once(HTTP/Request2.php): failed to open stream: No such file or directory in D:\home\site\wwwroot\face-recognition.php on line 15
+[02-May-2019 14:10:54 America/Los_Angeles] PHP Fatal error:  require_once(): Failed opening required 'HTTP/Request2.php' (include_path='.;C:\php\pear') in D:\home\site\wwwroot\face-recognition.php on line 15
+[02-May-2019 14:28:43 America/Los_Angeles] PHP Notice:  Undefined index: search-text in D:\home\site\wwwroot\bing-search-image.php on line 16
+[02-May-2019 14:28:43 America/Los_Angeles] PHP Warning:  require_once(HTTP/Request2.php): failed to open stream: No such file or directory in D:\home\site\wwwroot\face-recognition.php on line 15
+[02-May-2019 14:28:43 America/Los_Angeles] PHP Fatal error:  require_once(): Failed opening required 'HTTP/Request2.php' (include_path='.;C:\php\pear') in D:\home\site\wwwroot\face-recognition.php on line 15
+[02-May-2019 14:28:54 America/Los_Angeles] PHP Warning:  require_once(HTTP/Request2.php): failed to open stream: No such file or directory in D:\home\site\wwwroot\face-recognition.php on line 15
+[02-May-2019 14:28:54 America/Los_Angeles] PHP Fatal error:  require_once(): Failed opening required 'HTTP/Request2.php' (include_path='.;C:\php\pear') in D:\home\site\wwwroot\face-recognition.php on line 15
+[02-May-2019 14:29:46 America/Los_Angeles] PHP Notice:  Undefined index: search-text in D:\home\site\wwwroot\bing-search-image.php on line 16
+[02-May-2019 15:40:57 America/Los_Angeles] PHP Notice:  Undefined offset: 0 in D:\home\site\wwwroot\bing-search-image.php on line 25
+[02-May-2019 15:40:57 America/Los_Angeles] PHP Notice:  Trying to get property of non-object in D:\home\site\wwwroot\bing-search-image.php on line 25
+[02-May-2019 15:40:57 America/Los_Angeles] PHP Notice:  Trying to get property of non-object in D:\home\site\wwwroot\bing-search-image.php on line 25
+[02-May-2019 15:40:57 America/Los_Angeles] PHP Notice:  Undefined offset: 0 in D:\home\site\wwwroot\bing-search-image.php on line 26
+[02-May-2019 15:40:57 America/Los_Angeles] PHP Notice:  Trying to get property of non-object in D:\home\site\wwwroot\bing-search-image.php on line 26
+[02-May-2019 15:40:57 America/Los_Angeles] PHP Notice:  Trying to get property of non-object in D:\home\site\wwwroot\bing-search-image.php on line 26
+[02-May-2019 15:40:57 America/Los_Angeles] PHP Notice:  Undefined offset: 0 in D:\home\site\wwwroot\bing-search-image.php on line 27
+[02-May-2019 15:40:57 America/Los_Angeles] PHP Notice:  Trying to get property of non-object in D:\home\site\wwwroot\bing-search-image.php on line 27
+[02-May-2019 15:40:57 America/Los_Angeles] PHP Notice:  Trying to get property of non-object in D:\home\site\wwwroot\bing-search-image.php on line 27
+[02-May-2019 15:40:57 America/Los_Angeles] PHP Warning:  Invalid argument supplied for foreach() in D:\home\site\wwwroot\bing-search-image.php on line 27
+[02-May-2019 15:41:43 America/Los_Angeles] PHP Notice:  Undefined index: search-text in D:\home\site\wwwroot\bing-search-image.php on line 16
+[02-May-2019 15:41:43 America/Los_Angeles] PHP Warning:  file_get_contents(https://westeurope.api.cognitive.microsoft.com/bing/v7.0/images/search?q=): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in D:\home\site\wwwroot\search-image-api.php on line 12
+[02-May-2019 15:41:43 America/Los_Angeles] PHP Notice:  Trying to get property of non-object in D:\home\site\wwwroot\search-image-api.php on line 22
+[02-May-2019 15:41:43 America/Los_Angeles] PHP Notice:  Trying to get property of non-object in D:\home\site\wwwroot\search-image-api.php on line 22
+[02-May-2019 15:41:43 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\home\site\wwwroot\bing-search-image.php:25
+Stack trace:
+#0 {main}
+  thrown in D:\home\site\wwwroot\bing-search-image.php on line 25
+[02-May-2019 15:42:11 America/Los_Angeles] PHP Notice:  Undefined index: search-text in D:\home\site\wwwroot\bing-search-image.php on line 16
+[02-May-2019 15:42:12 America/Los_Angeles] PHP Warning:  file_get_contents(https://westeurope.api.cognitive.microsoft.com/bing/v7.0/images/search?q=): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in D:\home\site\wwwroot\search-image-api.php on line 12
+[02-May-2019 15:42:12 America/Los_Angeles] PHP Notice:  Trying to get property of non-object in D:\home\site\wwwroot\search-image-api.php on line 22
+[02-May-2019 15:42:12 America/Los_Angeles] PHP Notice:  Trying to get property of non-object in D:\home\site\wwwroot\search-image-api.php on line 22
+[02-May-2019 15:42:12 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\home\site\wwwroot\bing-search-image.php:25
+Stack trace:
+#0 {main}
+  thrown in D:\home\site\wwwroot\bing-search-image.php on line 25

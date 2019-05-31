@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html property="http://scholarly-html.org/schtml" lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <title>Documentatie</title>
+        <link rel="stylesheet" type="text/css" href="css/scholarly.css">
+    </head>
+    <body>
+        <article resource="#" typeof="schema:ScholarlyArticle">
+            <header>
+                <h1 property="schema:name"> Documentatie </h1>
+                <p role="doc-subtitle" property="schema:alternateName">
+                    1. Ce este PoliticieniDeTop.com?
+                </p>
+                <p role="doc-subtitle" property="schema:alternateName">
+                    2. Maniera de interactiune cu utilizatorul
+                </p>
+                <p role="doc-subtitle" property="schema:alternateName">
+                    3. Detalii referitoare la implementare
+                </p>
+            </header>
+            <meta property="schema:accessibilityFeature" content="alternativeText">
+            <meta property="schema:accessibilityFeature" content="MathML">
+            <meta property="schema:accessibilityHazard" content="noFlashingHazard">
+        </article>
+        <section typeof="sa:AuthorsList">
+            <h3>1. Ce este PoliticieniDeTop.com?</h3>
+            <article resource="#" typeof="schema:ScholarlyArticle">
+                <header>
+                    <span role="doc-acknowledgments" property="schema:alternateName">
+                    PoliticieniDeTop.com este o platforma care are scopul de a aduna informatii despre politicieni intr-un singur loc si de a le face accesibile pentru utilizatori.
+                    </span>
+                </header>
+                <meta property="schema:accessibilityFeature" content="alternativeText">
+                <meta property="schema:accessibilityFeature" content="MathML">
+                <meta property="schema:accessibilityHazard" content="noFlashingHazard">
+            </article>
+        </section>
+        <section typeof="sa:AuthorsList">
+            <h3>2. Maniera de interactiune cu utilizatorul</h3>
+            <article resource="#" typeof="schema:ScholarlyArticle">
+                <header>
+                    <p role="doc-subtitle"> Utilizatorul poate: </p>
+                </header>
+                <meta property="schema:accessibilityFeature" content="alternativeText">
+                <meta property="schema:accessibilityFeature" content="MathML">
+                <meta property="schema:accessibilityHazard" content="noFlashingHazard">
+            </article>
+            <ul>
+                <li typeof="sa:ContributorRole" property="schema:author">
+                    <span property="schema:name">Sa cauta stiri despre politicieni</span>
+                </li>
+                <li typeof="sa:ContributorRole" property="schema:author">
+                    <span property="schema:name">Sa vada ce exprima fata politicianului cautat</span>
+                </li>
+                <li typeof="sa:ContributorRole" property="schema:author">
+                    <span property="schema:name">Sa vada un top cu cei mai cautati politicieni</span>
+                </li>
+                <li typeof="sa:ContributorRole" property="schema:author">
+                    <span property="schema:name">Sa caute un politician folosind vocea</span>
+                </li>
+            </ul>
+            <article resource="#" typeof="schema:ScholarlyArticle">
+                <header>
+                    <span role="doc-acknowledgments" property="schema:alternateName">
+                    1. Pe pagina principala utilizatorul are posibilitatea de a introduce numele politicianului despre care vrea sa afle mai multe informatii. De asemenea, utilizatorul poate sa vada care sunt cei mai cautati politicieni.
+                    </span>
+                </header>
+                <meta property="schema:accessibilityFeature" content="alternativeText">
+                <meta property="schema:accessibilityFeature" content="MathML">
+                <meta property="schema:accessibilityHazard" content="noFlashingHazard">
+            </article>
+            <article resource="#" typeof="schema:ScholarlyArticle">
+                <header>
+                    <span role="doc-acknowledgments" property="schema:alternateName">
+                    2. Pentru fiecare cautare se deschide o pagina noua. Pagina contine o poza care apartine persoanei cautate, expresiile faciale care se regasesc in poza si mai multe stiri care au legatura cu persoana cautata. Stirile sunt traduse in romana.
+                    </span>
+                </header>
+                <meta property="schema:accessibilityFeature" content="alternativeText">
+                <meta property="schema:accessibilityFeature" content="MathML">
+                <meta property="schema:accessibilityHazard" content="noFlashingHazard">
+            </article>
+        </section>
+        <section typeof="sa:AuthorsList">
+            <h3>3. Detalii referitoare la implementare</h3>
+            <article resource="#" typeof="schema:ScholarlyArticle">
+                <header>
+					<h5>Azure Database for MySQL server</h5>
+                    <span role="doc-acknowledgments" property="schema:alternateName">
+						Am folosit Azure Database for MySQL server pentru a stoca in tabelul "recent_searches" informatii despre cele mai recente cautari. Tabelul are patru coloane: id, Nume, Numar de cautari si Numar de reporturi. Pentru a ma conecta la baza de date trebuie sa folosesc un username si o parola care au fost generate atunci cand serviciul a fost ales pentru aplicatie.
+					</span>
+					<h5>Bing Image Search</h5> 
+					<span role="doc-acknowledgments" property="schema:alternateName">
+						Am folosit acest serviciu pentru a cauta o imagine care corespunde persoanei despre care utilizatorul vrea sa afle mai multe informatii. Serviciul cauta pe Bing mai multe imagini si returneaza un JSON, care este apoi parsat si din care este extrasa prima imagine.
+					</span>
+					
+					<h5>Speaker Recognition API</h5>
+					<span role="doc-acknowledgments" property="schema:alternateName">
+						Este folosit pentru a oferi utilizatorului posibilitatea de a cauta un politician, folosind comenzi vocale. Pentru a putea fi folosit, browser-ul va cere o permisiune. Serviciul primeste un input de tip audio si returneaza un json din care este extras textul care va fi folosit pentru cautare.
+					</span>
+					<h5>Face Recognition</h5>
+					<span role="doc-acknowledgments" property="schema:alternateName">
+						Este un serviciu care primeste ca input o imagine si returneaza un json cu informatii. Aplicatia foloseste acel json pentru a extrage varsta si expresiile faciale care corespund pozei date ca input.
+					</span>
+                    <h5>Bing News Search</h5>
+					<span role="doc-acknowledgments" property="schema:alternateName">
+						Am folosit acest serviciu pentru a afisa o lista cu stiri despre persoana cautata. Serviciul primeste ca input un nume dupa care se face cautarea si returneaza un json care contine stiri despre persoana cautata. Json-ul contine o descriere pentru fiecare stire, un url si un titlu. Titlul si descriere sunt returnate in engleza.
+					</span>
+                    <h5>Text Translate</h5>
+					<span role="doc-acknowledgments" property="schema:alternateName">					
+						Serviciul este folosit pentru a traduce un text. Aplicatia il foloseste pentru a traduce titlul si descrierea stirilor din engleza in romana. Ca si input este dat textul in engleza, iar ca outpute este returnat un json care contine textul tradus in romana.
+					 </span>
+                </header>
+                <meta property="schema:accessibilityFeature" content="alternativeText">
+                <meta property="schema:accessibilityFeature" content="MathML">
+                <meta property="schema:accessibilityHazard" content="noFlashingHazard">
+            </article>
+        </section>
+    </body>
+</html>
